@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.wireframesketcher.model.tests;singleton:=true
+Bundle-Version: 4.6.4.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.core.resources;resolution:=optional,
+ com.wireframesketcher.model,
+ org.junit
+Bundle-ActivationPolicy: lazy
+Eclipse-LazyStart: true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

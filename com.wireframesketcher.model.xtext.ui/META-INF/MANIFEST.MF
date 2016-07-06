@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.wireframesketcher.model.xtext.ui; singleton:=true
+Bundle-Version: 4.6.4.qualifier
+Bundle-Activator: com.wireframesketcher.model.xtext.ui.Activator
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.google.guava,
+ com.google.inject,
+ org.apache.log4j,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.xbase.lib,
+ com.wireframesketcher.model.xtext;visibility:=reexport,
+ org.xpect.ui;bundle-version="0.1.0"
+Bundle-ActivationPolicy: lazy
+

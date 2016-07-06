@@ -1,0 +1,16 @@
+This is a public repository for open-sourced parts of "WireframeSketcher rapid wireframing tool":http://wireframesketcher.com.
+
+For more details refer to "http://wireframesketcher.com/developers.html":http://wireframesketcher.com/developers.html.
+
+
+*** Boomslang specifics ***
+
+Due to a Tycho bug (id 389698), the p2 repository for this project needs to be built separately. 
+
+Commands for a full build:
+  > mvn install
+  > cd com.wireframesketcher.model.repository.remote
+  > mvn install
+
+After this, the boomslang build is able to use this patched WireframeSketcher model's P2 repository.
+

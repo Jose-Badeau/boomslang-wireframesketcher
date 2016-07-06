@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<!-- EMF ext glue code -->
+    <extension
+          point="org.eclipse.xtext.extension_resourceServiceProvider">
+        <resourceServiceProvider
+              class="com.wireframesketcher.model.xtext.ui.ScreenExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider"
+              uriExtension="screen">
+        </resourceServiceProvider>
+    </extension>
+    <!-- Extension transfered to here from  com.wireframesketcher.model to be able to use the Boomslang specific BoomslangWFSModelResourceFactory-->
+     <extension
+        point="org.eclipse.emf.ecore.extension_parser">
+     <parser
+           class="com.wireframesketcher.model.xtext.BoomslangWFSModelResourceFactory"
+           type="screen">
+     </parser>
+  </extension> 
+    <!-- Xpect testing glue code -->
+   <extension
+         point="org.xpect.fileExtensions">
+      <fileExtension
+            fileExtension="screen"
+            xtextLanguageName="com.wireframesketcher.ui.editors.ScreenEditor"
+            xtextRuntimeModule="com.wireframesketcher.model.xtext.ScreenRuntimeModule"
+            xtextResourceServiceProvider="com.wireframesketcher.model.xtext.ui.ScreenExecutableExtensionFactory:org.eclipse.xtext.resource.generic.GenericResourceServiceProvider"
+            />
+   </extension>
+ 
+</plugin>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<!-- *************************************************************************************
+  If this comment is not here anymore and formatting is gone, the target platform has been 
+  edited in the graphical target platform editor and might be broken now. Take care when 
+  editing this file and verify changes manually before checking in. 
+  **************************************************************************************** -->
+<target includeMode="feature" name="WireframeSketcher Remote Target" sequenceNumber="1">
+
+  <locations>
+
+    <!--
+      Use this -remote target platform to fetch fresh dependencies from the internet 
+      or to develop outside of a company P2 environment.
+    -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.rcp.feature.group" version="4.4.2.v20150204-1700"/>
+      <repository location="http://download.eclipse.org/releases/luna/201502271000"/>
+    </location>
+
+    <!-- Be aware that previous releases of this software are not maintained: Forced upgrade if the version is gone. 
+         This dependency is used to allow graphically edit .screen files and requires a valid license. -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="com.wireframesketcher.feature.group" version="4.6.4"/>
+      <repository location="http://wireframesketcher.com/updates/"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.xtext.sdk.feature.group" version="2.10.0.v201605250459"/>
+      <repository location="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.10.0/"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.xpect.sdk.feature.group" version="0.1.0.201508191347"/>
+      <repository location="http://www.xpect-tests.org/updatesite/nightly/"/>
+    </location>
+
+  </locations>
+
+</target>
