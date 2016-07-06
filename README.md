@@ -1,2 +1,2 @@
-# boomslang-wfs
+# boomslang-wireframesketcher
 boomslang-wireframesketcher
