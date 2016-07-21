@@ -279,4 +279,5 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<description>Wireframsketcher wrapper</description>
 </project>
