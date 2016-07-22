@@ -1,2 +1,5 @@
 language: java
-script: mvn clean install
+script: 
+- mvn clean install
+- cd com.wireframesketcher.model.repository.remote
+- mvn install 
