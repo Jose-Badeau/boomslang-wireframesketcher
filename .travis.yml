@@ -9,4 +9,4 @@ env:
   - secure: bbS1pYh9MGC+44sMU3qeqIrr09fGToIyOuY97zviqaXuyRuqoINFOizP5BX/HFtm683Jx2yR212bJFCimayaVT1DPG1CcMv2eKSxRbtTfnv9ddmsTnKWEI7GwwcAPsi1mXOgg9UnXkd6jAt3ZN2sNjAwTs9mDZ/fNpW9fiorP91glzBRTGXrvI3KkKa6rq+GyxYrhqJzMsknxZ+q8ydApiDt2VhiQ05iHfmuE+EtQwLow4UXYzppMqoN5Urn9uxuQw0YK8BJGaUWCWmF5+6E72widWmSixwXyR488O4ei7Js4quICs5GRIohwTfrlOyjyL4N6ay543KhW2ltRJAj+8dfvvVnSZOy43PbduDr4QaYErF1MdcVxBXRpB4WduFMlG6lCZ81SmdJQfN26bTghAkQvqjl+osOuuOQsW9O4jq/x672EaQzgTO4TUbJAjEeNX5Q0nJMH8z4Bh5tUhdAyZ85saq3KWVucW/qKYHiYxwv1yZGzPNhOISoMG2f4ak93peTPLIendEoQRKJLeeufScbQm/Xh+uj+6t1ML6Z8fb5tF6Hu5pyjYu2oyUCLCoH0O/UEOH9/as3DIU8iPlrfs+0fPFmmzbSt5fY03ggQf6b8u/xoszL0E8+izHrmSP4LyFH7kjrB1L5fg7P3FjceBgQlxTV0aBJvHASpP/JIf4=
 
 after_success:
-    "find ./target/repository/ -type f curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://boomslang.org/updates/boomslang-wfs/repository/{} \;"
+    find ./target/repository/ -type f curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://boomslang.org/updates/boomslang-wfs/repository/{} \;
