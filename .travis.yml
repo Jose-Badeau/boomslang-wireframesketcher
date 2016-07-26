@@ -5,7 +5,7 @@ script:
 - mvn install
 before_deploy:
   - "mvn -DskipTests package"
-  - cd target/repository
+  - cd target
   - test $FOO=$(find * -type f)
   - echo "Deploying $FOO to GitHub"
 deploy:
@@ -13,9 +13,7 @@ deploy:
   api_key:
     secure: DSfTA5mu69GdWOA8Bhsltq8eDzGGAaaIWK0w1fJWjgehD2N4hyaZSZ/NBNwTDQw85WPHVsYOrsygfMghovuDe0z0EY4VuDV6HsOqz/MJEPIr8xPX30Kw7Ml9i1HV+U7BFCWoipfzzV2K19na9t3O8UEU7qp007I6ED6TXiHCCW6VocD337PVM/uhAvW0hGNpxqq81yomHNBXgbKkIjZIPujOs6W93wn6+XYthBHQVYx9R74ihTtFrxXf6e3Uyj0XBJnpMn6EK6LKkng4Di8qi5TLsi3eW40zI69YYZe4zYsoBrsZ/mq76QJHJ2q2luw48M/viwbnpxEO0cwF9dcMnN1/DkH4GqcgOmY7+khZmzzk4C7/yURIalS43l2DzFOwg6SVh9IM0wjHqntQyCBe4/bDNSAjnQX/a/b+eBRsBkg/9ZTxu1jmXAlPYWZ4sLgy35d409UCSs/S1GW9hULAWhJZZRrimsQrlhPrehXyisKQ4xxaN418uOyn4sb2g2gLXho7ehzGsOdxD7ZUfq8CnwkkYKk9bP9KlOLWLNU3pbWftkQparOmhh2jHxELyRNUUjwjw8iM+wNnBMapAIGn1DTk2tGDGYfBg3xh63ZMT/PHyRAVUpjw7Oz5q6G+dxgqUURwbNU3+eh6PAPEQ/5fkI29lso27tLKC8KaqDHjIiM=
   file_glob: true
-  file:
-    - artifacts.jar
-    - contents.jar
+  file: repository/*
   skip_cleanup: true
   on:
      repo: Jose-Badeau/boomslang-wireframesketcher
