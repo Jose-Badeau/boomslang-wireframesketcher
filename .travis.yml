@@ -6,7 +6,7 @@ script:
 before_deploy:
   - "mvn -DskipTests package"
   - cd target/repository
-  - export FOO=$(ls *)
+  - export FOO=$(find * -type f)
   - echo "Deploying $FOO ti GitHub"
 deploy:
   provider: releases
