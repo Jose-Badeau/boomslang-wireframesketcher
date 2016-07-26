@@ -6,8 +6,7 @@ script:
 before_deploy:
   - "mvn -DskipTests package"
   - cd target
-  - test FOO=$(find * -type f)
-  - echo "Deploying $FOO to GitHub"
+  - echo "Deploying to GitHub"
 deploy:
   provider: releases
   api_key:
