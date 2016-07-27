@@ -4,4 +4,4 @@ script:
 - cd com.wireframesketcher.model.repository.remote
 - mvn install
 
-after_success: find ./target/repository/ -type f curl --ftp-create-dirs -T {} -u $anonymous:buender@itemis.de ftp://test.talia.net/{} \;
+after_success: find ./target/repository/ -type f exec curl --ftp-create-dirs -T {} -u $anonymous:buender@itemis.de ftp://test.talia.net/{} \;
