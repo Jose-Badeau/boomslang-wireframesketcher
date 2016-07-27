@@ -1,12 +1,13 @@
 language: java
+install: gem install travis-custom-deploy
 script:
 - mvn clean install
 - cd com.wireframesketcher.model.repository.remote
 - mvn install
 before_deploy:
-  - "mvn -DskipTests package"
-  - cd target
-  - echo "Deploying to GitHub"
+- mvn -DskipTests package
+- cd target
+- echo "Deploying to GitHub"
 deploy:
   provider: releases
   api_key:
@@ -15,5 +16,7 @@ deploy:
   file: target/com.wireframesketcher.model.repository.remote-4.6.4-SNAPSHOT.zip
   skip_cleanup: true
   on:
-     repo: Jose-Badeau/boomslang-wireframesketcher
-
+    repo: Jose-Badeau/boomslang-wireframesketcher
+env:
+  global:
+    secure: osN+l6KICnFob1AZergk6qZkIjLRuRQ+Iy70lY9Yd4f/yse8H8/3k6Yv1Ixglok65mpWmed7Kel2L3qkIo9KxW1UW4rgfV2y/df49rbg2nWSum+5OeZPnGUs3FqdI83Wzk8Y6NTVTu5DINXDLfkQAU1PHaoFOKobLzWWJMvuBFwv5gOpQV/Bxbo4HnhEZ/EChOjwq0hj5COOr38GhKgsLS+7wjvAWxWPL6yM1gYzEcn7O6fuH7bpxBx1uqQqFiqUrZnbkEOTwofUgvuspNICqUdBp59XRTxsqAhL83ygLkndi8wu76DJGt2zRd3Xo0GIGWHHGN2I9ctD4ek5iuMZ1y8A+78CnLw1rVfh/KHcHKLHC5XqwGs2XVVjVaYn8HefwjG4Jp0u7Ilbb1urSAyuIdMQJD1WB9Rk1GN9GxQiuUPuy1qgXgw/wYhvjUAHdAlLBdlrKyCP8eKDohnRWOSNMAUNOeLEfJhmN1NmweutjML75o8+oGhrUMe9itN6YpHZ0Mu0ks4zkiM1mZtsjsMTFLGB/ahhtCbJgFYLmq7SM4Te4YWCOnCAc/L+BzJC37APALgIjaRrrmJFZxbEz/yxVdKv+WwxXLaWLFkVoxgEAauqx9oSNU3/LY3pTg1KsM1EVAdsrchRsHCwtWIgDLJMxfzopEGmPb5DOUbqqZzhbuI=
