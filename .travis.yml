@@ -1,6 +1,6 @@
 language: java
 sudo: true
-before_install: sudo apt-get install ruby
+before_install: sudo apt-get install ruby 2.3
 install: gem install travis-custom-deploy
 script:
 - mvn clean install
