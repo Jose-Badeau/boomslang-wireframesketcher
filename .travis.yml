@@ -4,4 +4,4 @@ script:
 - cd com.wireframesketcher.model.repository.remote
 - mvn install
 
-after_success: bash -e ./build.sh
+after_success: bash -e ./../build.sh
