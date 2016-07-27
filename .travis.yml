@@ -7,11 +7,7 @@ script:
 - mvn clean install
 - cd com.wireframesketcher.model.repository.remote
 - mvn install
-before_deploy:
-- mvn -DskipTests package
-- cd target
-- echo "Deploying to GitHub"
-deploy: bundle exec travis-custom-deploy sftp target/repository/
+after_success: bundle exec travis-custom-deploy sftp target/repository/
 env:
   global:
   - secure: lOPE06qYe2ao+YtN2P8QjZDxZv+vk/6LX6W1a+gMFbUDHlbKKgOu2aIDW3N9LCoiB98EhQraM13oYsaJPb7icEmJlcxovKXWbphptVKZ5/biLgopbVbhuHkRxRUWPSgIB9xPfzvzp5WJMJ2pXZHan9TD/IGkJBXbavahob0hn9/yzqKb2D06FqzauN8bwNR+3nmfO09CXLlqlpg7nTB9/VxbLzmE0JlRrSAAkC7gr+CTIJP6jlbMbwbURqq/ouA8BSDmGmfu4Lp5Rlll+pe/WkDnxFgaHe4oC8ef5PvFc4ghVpnKNb8F/NdzA/XV+6sNUvYfrfgfLpUhJ6pV8veuJ15A1AiTlGx20Gn5Hlzpb9WgqqXpV6oO1JZI/jFelMactRTUJz7f31iR5ro2iiqBLzWpvqJ5RuWg2kBAKj7noXyL6eex6tKjD+LML2HwH9uBZ6kYGu+eiqtFSGvRW5eg0VtCHWHCqV6rk9JTB6964kS6qa/fBFsUXrARqlrN9HRyqXuObi3PqnSOLjlMzuaNHIfJ4iOLy4rHa4LQJ7QRWiC4lSLyE8GTPpBpvQocuaPyTxnvNuD2TFHzscipTYJfpSd5r41MPRn6omiwDi2HFXytKuEAAiuiF1DFMtPhlNpANpgLO5T/gxjKtCITkS84BVa2oFntKcNcS1GTz2+oHwI=
