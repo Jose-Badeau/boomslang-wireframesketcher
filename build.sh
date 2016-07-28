@@ -13,7 +13,6 @@ deploy_updatesite
 }
 function deploy_updatesite() {
 echo "${BINTRAY_USER}"
-echo "${BINTRAY_API_KEY}"
 echo "${BINTRAY_OWNER}"
 echo "${BINTRAY_REPO}"
 echo "${PCK_NAME}"
