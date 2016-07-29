@@ -1,4 +1,5 @@
 language: java
+before_script: java -jar DirectoryCleaner.jar $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates
 script:
 - mvn clean install
 - cd com.wireframesketcher.model.repository.remote
