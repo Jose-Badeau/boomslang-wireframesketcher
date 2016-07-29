@@ -2,6 +2,7 @@ language: java
 sudo: true
 before_script: 
    - java -jar DirectoryCleaner.jar $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates
+   - cat test.sh
    - bash -e ./test.sh
 script:
 - mvn clean install
