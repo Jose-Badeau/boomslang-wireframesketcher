@@ -17,10 +17,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.WidgetContainerOverrides#getWidgetChanges <em>Widget Changes</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getWidgetContainerOverrides()
  * @model abstract="true"

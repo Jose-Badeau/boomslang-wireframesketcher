@@ -24,11 +24,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.HScrollbarImpl#getValue <em>Value</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.HScrollbarImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

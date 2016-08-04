@@ -26,11 +26,11 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ColorPickerImpl#getBackground <em>Background</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ColorPickerImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

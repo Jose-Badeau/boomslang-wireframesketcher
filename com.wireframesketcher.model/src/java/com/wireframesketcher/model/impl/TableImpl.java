@@ -7,10 +7,12 @@
 package com.wireframesketcher.model.impl;
 
 import com.wireframesketcher.model.BorderSupport;
+import com.wireframesketcher.model.ClickSupport;
 import com.wireframesketcher.model.ColorAlphaSupport;
 import com.wireframesketcher.model.ColorAlternativeSupport;
 import com.wireframesketcher.model.ColorBackgroundSupport;
 import com.wireframesketcher.model.ColorDesc;
+import com.wireframesketcher.model.DoubleClickSupport;
 import com.wireframesketcher.model.Font;
 import com.wireframesketcher.model.FontSupport;
 import com.wireframesketcher.model.Item;
@@ -23,6 +25,7 @@ import com.wireframesketcher.model.ResizeMode;
 import com.wireframesketcher.model.Table;
 import com.wireframesketcher.model.TextAlignment;
 import com.wireframesketcher.model.TextAlignmentSupport;
+import com.wireframesketcher.model.TextInputSupport;
 import com.wireframesketcher.model.TextLinksSupport;
 import com.wireframesketcher.model.ValueSupport;
 import com.wireframesketcher.model.VerticalScrollbarSupport;
@@ -44,6 +47,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.TableImpl#getSelection <em>Selection</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TableImpl#isBorder <em>Border</em>}</li>
@@ -60,7 +64,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.wireframesketcher.model.impl.TableImpl#isVerticalLines <em>Vertical Lines</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TableImpl#isHeader <em>Header</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -612,6 +615,50 @@ public class TableImpl extends WidgetImpl implements Table {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public void doEnter() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doDoubleClick() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doClick() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doSelect() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -913,6 +960,21 @@ public class TableImpl extends WidgetImpl implements Table {
 				default: return -1;
 			}
 		}
+		if (baseClass == ClickSupport.class) {
+			switch (derivedFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == DoubleClickSupport.class) {
+			switch (derivedFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == TextInputSupport.class) {
+			switch (derivedFeatureID) {
+				default: return -1;
+			}
+		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
 	}
 
@@ -991,6 +1053,21 @@ public class TableImpl extends WidgetImpl implements Table {
 			}
 		}
 		if (baseClass == TextLinksSupport.class) {
+			switch (baseFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == ClickSupport.class) {
+			switch (baseFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == DoubleClickSupport.class) {
+			switch (baseFeatureID) {
+				default: return -1;
+			}
+		}
+		if (baseClass == TextInputSupport.class) {
 			switch (baseFeatureID) {
 				default: return -1;
 			}

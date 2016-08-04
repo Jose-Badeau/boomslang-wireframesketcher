@@ -22,13 +22,13 @@ import com.wireframesketcher.model.ModelPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.FontImpl#getSize <em>Size</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.FontImpl#getBold <em>Bold</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.FontImpl#getItalic <em>Italic</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.FontImpl#getUnderline <em>Underline</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

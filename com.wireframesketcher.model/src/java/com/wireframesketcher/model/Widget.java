@@ -12,6 +12,7 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Widget#getId <em>Id</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Widget#getContainer <em>Container</em>}</li>
@@ -29,7 +30,6 @@ package com.wireframesketcher.model;
  *   <li>{@link com.wireframesketcher.model.Widget#isAnnotation <em>Annotation</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Widget#getLayoutParams <em>Layout Params</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getWidget()
  * @model abstract="true"

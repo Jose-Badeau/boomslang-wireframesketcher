@@ -16,10 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.LinkSupport#getLink <em>Link</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getLinkSupport()
  * @model interface="true" abstract="true"

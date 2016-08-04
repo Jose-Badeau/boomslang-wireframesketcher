@@ -17,10 +17,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.story.Storyboard#getPanels <em>Panels</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.story.StoryPackage#getStoryboard()
  * @model

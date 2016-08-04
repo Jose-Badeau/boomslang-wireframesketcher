@@ -15,10 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.SelectionSupport#getSelection <em>Selection</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getSelectionSupport()
  * @model interface="true" abstract="true"
@@ -54,5 +54,13 @@ public interface SelectionSupport extends EObject {
 	 * @generated
 	 */
 	void setSelection(int value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void doSelect();
 
 } // SelectionSupport

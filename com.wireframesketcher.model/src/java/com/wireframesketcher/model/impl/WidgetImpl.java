@@ -28,6 +28,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#getName <em>Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#isVisible <em>Visible</em>}</li>
@@ -47,7 +48,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#isAnnotation <em>Annotation</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#getLayoutParams <em>Layout Params</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

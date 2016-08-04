@@ -13,6 +13,7 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Item#getX <em>X</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Item#getY <em>Y</em>}</li>
@@ -20,7 +21,6 @@ package com.wireframesketcher.model;
  *   <li>{@link com.wireframesketcher.model.Item#getHeight <em>Height</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Item#getText <em>Text</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getItem()
  * @model

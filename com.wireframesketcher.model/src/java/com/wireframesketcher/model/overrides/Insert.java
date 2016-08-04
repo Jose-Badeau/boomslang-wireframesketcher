@@ -15,11 +15,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.Insert#getObject <em>Object</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.Insert#getNewIndex <em>New Index</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getInsert()
  * @model

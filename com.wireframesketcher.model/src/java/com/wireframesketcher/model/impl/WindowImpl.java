@@ -29,6 +29,7 @@ import org.eclipse.emf.common.util.URI;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.WindowImpl#getValue <em>Value</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WindowImpl#isVerticalScrollbar <em>Vertical Scrollbar</em>}</li>
@@ -39,7 +40,6 @@ import org.eclipse.emf.common.util.URI;
  *   <li>{@link com.wireframesketcher.model.impl.WindowImpl#isMinimizeButton <em>Minimize Button</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WindowImpl#isMaximizeButton <em>Maximize Button</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

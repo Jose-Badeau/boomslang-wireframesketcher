@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetDescriptorImpl#getTypeName <em>Type Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetDescriptorImpl#getResizeMode <em>Resize Mode</em>}</li>
@@ -31,7 +32,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link com.wireframesketcher.model.impl.WidgetDescriptorImpl#getTextLines <em>Text Lines</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetDescriptorImpl#isTextCentered <em>Text Centered</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

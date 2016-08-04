@@ -47,6 +47,7 @@ import com.wireframesketcher.model.CoverFlow;
 import com.wireframesketcher.model.CrossOut;
 import com.wireframesketcher.model.CurlyBrace;
 import com.wireframesketcher.model.DateField;
+import com.wireframesketcher.model.DoubleClickSupport;
 import com.wireframesketcher.model.FlipSupport;
 import com.wireframesketcher.model.Font;
 import com.wireframesketcher.model.FontSize;
@@ -744,6 +745,13 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * @generated
 	 */
 	private EClass textInputSupportEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doubleClickSupportEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2698,6 +2706,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDoubleClickSupport() {
+		return doubleClickSupportEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getVisibleSupport() {
 		return visibleSupportEClass;
 	}
@@ -3208,6 +3225,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		searchFieldEClass = createEClass(SEARCH_FIELD);
 
+		linkBarEClass = createEClass(LINK_BAR);
+
 		tooltipEClass = createEClass(TOOLTIP);
 		createEAttribute(tooltipEClass, TOOLTIP__POSITION);
 
@@ -3220,8 +3239,6 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(stateSupportEClass, STATE_SUPPORT__STATE);
 
 		breadcrumbsEClass = createEClass(BREADCRUMBS);
-
-		linkBarEClass = createEClass(LINK_BAR);
 
 		accordionEClass = createEClass(ACCORDION);
 
@@ -3332,6 +3349,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		textInputSupportEClass = createEClass(TEXT_INPUT_SUPPORT);
 
+		doubleClickSupportEClass = createEClass(DOUBLE_CLICK_SUPPORT);
+
 		visibleSupportEClass = createEClass(VISIBLE_SUPPORT);
 		createEAttribute(visibleSupportEClass, VISIBLE_SUPPORT__VISIBLE);
 
@@ -3431,6 +3450,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		comboEClass.getESuperTypes().add(this.getColorAlphaSupport());
 		comboEClass.getESuperTypes().add(this.getLinkSupport());
 		comboEClass.getESuperTypes().add(this.getSkinSupport());
+		comboEClass.getESuperTypes().add(this.getSelectionSupport());
 		labelEClass.getESuperTypes().add(this.getWidget());
 		labelEClass.getESuperTypes().add(this.getFontSupport());
 		labelEClass.getESuperTypes().add(this.getTextAlignmentSupport());
@@ -3533,6 +3553,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		tableEClass.getESuperTypes().add(this.getTextAlignmentSupport());
 		tableEClass.getESuperTypes().add(this.getColorAlternativeSupport());
 		tableEClass.getESuperTypes().add(this.getTextLinksSupport());
+		tableEClass.getESuperTypes().add(this.getClickSupport());
+		tableEClass.getESuperTypes().add(this.getDoubleClickSupport());
+		tableEClass.getESuperTypes().add(this.getTextInputSupport());
 		treeEClass.getESuperTypes().add(this.getWidget());
 		treeEClass.getESuperTypes().add(this.getBorderSupport());
 		treeEClass.getESuperTypes().add(this.getVerticalScrollbarSupport());
@@ -3622,6 +3645,11 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		searchFieldEClass.getESuperTypes().add(this.getColorBorderSupport());
 		searchFieldEClass.getESuperTypes().add(this.getLinkSupport());
 		searchFieldEClass.getESuperTypes().add(this.getSkinSupport());
+		linkBarEClass.getESuperTypes().add(this.getWidget());
+		linkBarEClass.getESuperTypes().add(this.getFontSupport());
+		linkBarEClass.getESuperTypes().add(this.getSelectionSupport());
+		linkBarEClass.getESuperTypes().add(this.getItemSupport());
+		linkBarEClass.getESuperTypes().add(this.getSkinSupport());
 		tooltipEClass.getESuperTypes().add(this.getWidget());
 		tooltipEClass.getESuperTypes().add(this.getFontSupport());
 		tooltipEClass.getESuperTypes().add(this.getTextAlignmentSupport());
@@ -3637,11 +3665,6 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		breadcrumbsEClass.getESuperTypes().add(this.getFontSupport());
 		breadcrumbsEClass.getESuperTypes().add(this.getItemSupport());
 		breadcrumbsEClass.getESuperTypes().add(this.getSkinSupport());
-		linkBarEClass.getESuperTypes().add(this.getWidget());
-		linkBarEClass.getESuperTypes().add(this.getFontSupport());
-		linkBarEClass.getESuperTypes().add(this.getSelectionSupport());
-		linkBarEClass.getESuperTypes().add(this.getItemSupport());
-		linkBarEClass.getESuperTypes().add(this.getSkinSupport());
 		accordionEClass.getESuperTypes().add(this.getWidget());
 		accordionEClass.getESuperTypes().add(this.getSelectionSupport());
 		accordionEClass.getESuperTypes().add(this.getVerticalScrollbarSupport());
@@ -3759,6 +3782,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		switchEClass.getESuperTypes().add(this.getSkinSupport());
 		clickSupportEClass.getESuperTypes().add(this.getNameSupport());
 		textInputSupportEClass.getESuperTypes().add(this.getNameSupport());
+		doubleClickSupportEClass.getESuperTypes().add(this.getNameSupport());
 		frameEClass.getESuperTypes().add(this.getPanel());
 		vButtonBarEClass.getESuperTypes().add(this.getWidget());
 		vButtonBarEClass.getESuperTypes().add(this.getSelectionSupport());
@@ -3919,6 +3943,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEClass(selectionSupportEClass, SelectionSupport.class, "SelectionSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSelectionSupport_Selection(), this.getSelectionDataType(), "selection", "-1", 0, 1, SelectionSupport.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		addEOperation(selectionSupportEClass, null, "doSelect", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(textAlignmentSupportEClass, TextAlignmentSupport.class, "TextAlignmentSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTextAlignmentSupport_TextAlignment(), this.getTextAlignment(), "textAlignment", null, 0, 1, TextAlignmentSupport.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -3932,6 +3958,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEClass(calloutEClass, Callout.class, "Callout", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(searchFieldEClass, SearchField.class, "SearchField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(linkBarEClass, LinkBar.class, "LinkBar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(tooltipEClass, Tooltip.class, "Tooltip", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTooltip_Position(), this.getPosition(), "position", "bottomLeft", 1, 1, Tooltip.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3948,8 +3976,6 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		addEParameter(op, this.getState(), "state", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(breadcrumbsEClass, Breadcrumbs.class, "Breadcrumbs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(linkBarEClass, LinkBar.class, "LinkBar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(accordionEClass, Accordion.class, "Accordion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -4060,7 +4086,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		initEClass(clickSupportEClass, ClickSupport.class, "ClickSupport", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		addEOperation(clickSupportEClass, null, "doClick", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(textInputSupportEClass, TextInputSupport.class, "TextInputSupport", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		addEOperation(textInputSupportEClass, null, "doEnter", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(doubleClickSupportEClass, DoubleClickSupport.class, "DoubleClickSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		addEOperation(doubleClickSupportEClass, null, "doDoubleClick", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(visibleSupportEClass, VisibleSupport.class, "VisibleSupport", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVisibleSupport_Visible(), ecorePackage.getEBoolean(), "visible", "true", 0, 1, VisibleSupport.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

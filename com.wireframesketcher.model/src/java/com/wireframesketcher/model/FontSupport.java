@@ -15,10 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.FontSupport#getFont <em>Font</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getFontSupport()
  * @model interface="true" abstract="true"

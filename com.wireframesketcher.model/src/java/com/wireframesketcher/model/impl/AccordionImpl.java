@@ -35,6 +35,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.AccordionImpl#getSelection <em>Selection</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.AccordionImpl#getValue <em>Value</em>}</li>
@@ -42,7 +43,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.AccordionImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.AccordionImpl#getFont <em>Font</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -265,6 +265,17 @@ public class AccordionImpl extends WidgetImpl implements Accordion {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.ACCORDION__FONT, newFont, newFont));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doSelect() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

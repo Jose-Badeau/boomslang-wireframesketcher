@@ -42,6 +42,7 @@ import java.util.Collection;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.NoteImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.NoteImpl#getTextAlignment <em>Text Alignment</em>}</li>
@@ -51,7 +52,6 @@ import java.util.Collection;
  *   <li>{@link com.wireframesketcher.model.impl.NoteImpl#getSkin <em>Skin</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.NoteImpl#getItems <em>Items</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

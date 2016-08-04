@@ -14,4 +14,12 @@ package com.wireframesketcher.model;
  * @generated
  */
 public interface TextInputSupport extends NameSupport {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void doEnter();
 } // TextInputSupport

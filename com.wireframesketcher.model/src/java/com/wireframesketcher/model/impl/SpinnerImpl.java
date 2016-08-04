@@ -34,6 +34,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.SpinnerImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SpinnerImpl#getFont <em>Font</em>}</li>
@@ -42,7 +43,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.SpinnerImpl#getAlpha <em>Alpha</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SpinnerImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

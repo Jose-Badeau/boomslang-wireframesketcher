@@ -32,6 +32,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.BrowserImpl#getValue <em>Value</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.BrowserImpl#isVerticalScrollbar <em>Vertical Scrollbar</em>}</li>
@@ -40,7 +41,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.BrowserImpl#getAlpha <em>Alpha</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.BrowserImpl#getFont <em>Font</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -22,6 +22,7 @@ import com.wireframesketcher.model.VisibleSupport;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ItemImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ItemImpl#isVisible <em>Visible</em>}</li>
@@ -31,7 +32,6 @@ import com.wireframesketcher.model.VisibleSupport;
  *   <li>{@link com.wireframesketcher.model.impl.ItemImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ItemImpl#getText <em>Text</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

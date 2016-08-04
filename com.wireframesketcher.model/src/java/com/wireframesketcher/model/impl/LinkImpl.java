@@ -34,13 +34,13 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.LinkImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

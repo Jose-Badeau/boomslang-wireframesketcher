@@ -27,6 +27,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ArrowImpl#getForeground <em>Foreground</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ArrowImpl#getLineStyle <em>Line Style</em>}</li>
@@ -34,7 +35,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.ArrowImpl#isRight <em>Right</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ArrowImpl#getDirection <em>Direction</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.story.Panel#getId <em>Id</em>}</li>
  *   <li>{@link com.wireframesketcher.model.story.Panel#getScreen <em>Screen</em>}</li>
@@ -24,7 +25,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.wireframesketcher.model.story.Panel#getX <em>X</em>}</li>
  *   <li>{@link com.wireframesketcher.model.story.Panel#getY <em>Y</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.story.StoryPackage#getPanel()
  * @model

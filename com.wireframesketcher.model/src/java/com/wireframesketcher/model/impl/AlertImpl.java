@@ -37,6 +37,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.AlertImpl#getIcon <em>Icon</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.AlertImpl#getIconRotation <em>Icon Rotation</em>}</li>
@@ -44,7 +45,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.AlertImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.AlertImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

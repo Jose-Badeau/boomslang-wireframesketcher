@@ -30,6 +30,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.DateFieldImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.DateFieldImpl#getBorderColor <em>Border Color</em>}</li>
@@ -37,7 +38,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.DateFieldImpl#getAlpha <em>Alpha</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.DateFieldImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -15,11 +15,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.FlipSupport#isHFlip <em>HFlip</em>}</li>
  *   <li>{@link com.wireframesketcher.model.FlipSupport#isVFlip <em>VFlip</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getFlipSupport()
  * @model interface="true" abstract="true"

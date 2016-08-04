@@ -15,10 +15,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.Overrides#getWidgets <em>Widgets</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getOverrides()
  * @model

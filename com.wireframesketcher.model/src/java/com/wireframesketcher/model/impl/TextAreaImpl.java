@@ -47,6 +47,7 @@ import java.util.Collection;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.TextAreaImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TextAreaImpl#getValue <em>Value</em>}</li>
@@ -60,7 +61,6 @@ import java.util.Collection;
  *   <li>{@link com.wireframesketcher.model.impl.TextAreaImpl#getLineHeight <em>Line Height</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TextAreaImpl#getItems <em>Items</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

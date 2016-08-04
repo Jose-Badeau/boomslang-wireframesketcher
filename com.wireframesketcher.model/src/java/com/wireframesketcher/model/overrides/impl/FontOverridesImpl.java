@@ -22,13 +22,13 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.FontOverridesImpl#getSize <em>Size</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.FontOverridesImpl#getBold <em>Bold</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.FontOverridesImpl#getItalic <em>Italic</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.FontOverridesImpl#getUnderline <em>Underline</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

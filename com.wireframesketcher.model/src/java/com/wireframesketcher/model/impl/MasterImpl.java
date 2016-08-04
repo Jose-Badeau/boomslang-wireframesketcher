@@ -27,6 +27,7 @@ import com.wireframesketcher.model.overrides.Overrides;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.MasterImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.MasterImpl#getScreen <em>Screen</em>}</li>
@@ -34,7 +35,6 @@ import com.wireframesketcher.model.overrides.Overrides;
  *   <li>{@link com.wireframesketcher.model.impl.MasterImpl#getOverrides <em>Overrides</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.MasterImpl#getInstance <em>Instance</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

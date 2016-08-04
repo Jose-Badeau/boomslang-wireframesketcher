@@ -52,6 +52,7 @@ import java.util.Collection;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.LabelImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LabelImpl#getTextAlignment <em>Text Alignment</em>}</li>
@@ -64,7 +65,6 @@ import java.util.Collection;
  *   <li>{@link com.wireframesketcher.model.impl.LabelImpl#getRotation <em>Rotation</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LabelImpl#getItems <em>Items</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

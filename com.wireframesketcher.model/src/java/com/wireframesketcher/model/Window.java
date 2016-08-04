@@ -14,12 +14,12 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Window#isCloseButton <em>Close Button</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Window#isMinimizeButton <em>Minimize Button</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Window#isMaximizeButton <em>Maximize Button</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getWindow()
  * @model

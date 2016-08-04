@@ -35,13 +35,13 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.LinkBarImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkBarImpl#getSelection <em>Selection</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkBarImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.LinkBarImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -223,6 +223,17 @@ public class LinkBarImpl extends WidgetImpl implements LinkBar {
 		skin = newSkin;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.LINK_BAR__SKIN, oldSkin, skin));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doSelect() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

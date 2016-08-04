@@ -14,4 +14,12 @@ package com.wireframesketcher.model;
  * @generated
  */
 public interface ClickSupport extends NameSupport {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void doClick();
 } // ClickSupport

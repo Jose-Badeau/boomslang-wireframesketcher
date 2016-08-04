@@ -34,6 +34,7 @@ import com.wireframesketcher.model.overrides.WidgetOverrides;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.WidgetOverridesImpl#getRef <em>Ref</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.WidgetOverridesImpl#getX <em>X</em>}</li>
@@ -50,7 +51,6 @@ import com.wireframesketcher.model.overrides.WidgetOverrides;
  *   <li>{@link com.wireframesketcher.model.overrides.impl.WidgetOverridesImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.WidgetOverridesImpl#getItemChanges <em>Item Changes</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -104,10 +104,10 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 			case ModelPackage.PROGRESS_BAR: return createProgressBar();
 			case ModelPackage.CALLOUT: return createCallout();
 			case ModelPackage.SEARCH_FIELD: return createSearchField();
+			case ModelPackage.LINK_BAR: return createLinkBar();
 			case ModelPackage.TOOLTIP: return createTooltip();
 			case ModelPackage.SCRATCH_OUT: return createScratchOut();
 			case ModelPackage.BREADCRUMBS: return createBreadcrumbs();
-			case ModelPackage.LINK_BAR: return createLinkBar();
 			case ModelPackage.ACCORDION: return createAccordion();
 			case ModelPackage.DATE_FIELD: return createDateField();
 			case ModelPackage.VIDEO_PLAYER: return createVideoPlayer();

@@ -20,12 +20,12 @@ import com.wireframesketcher.model.overrides.OverridesPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.ItemOverridesImpl#getText <em>Text</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.ItemOverridesImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.ItemOverridesImpl#isNoLink <em>No Link</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

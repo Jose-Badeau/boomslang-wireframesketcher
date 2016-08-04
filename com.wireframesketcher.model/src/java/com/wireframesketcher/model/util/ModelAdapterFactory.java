@@ -280,6 +280,10 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 				return createSearchFieldAdapter();
 			}
 			@Override
+			public Adapter caseLinkBar(LinkBar object) {
+				return createLinkBarAdapter();
+			}
+			@Override
 			public Adapter caseTooltip(Tooltip object) {
 				return createTooltipAdapter();
 			}
@@ -298,10 +302,6 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseBreadcrumbs(Breadcrumbs object) {
 				return createBreadcrumbsAdapter();
-			}
-			@Override
-			public Adapter caseLinkBar(LinkBar object) {
-				return createLinkBarAdapter();
 			}
 			@Override
 			public Adapter caseAccordion(Accordion object) {
@@ -458,6 +458,10 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseTextInputSupport(TextInputSupport object) {
 				return createTextInputSupportAdapter();
+			}
+			@Override
+			public Adapter caseDoubleClickSupport(DoubleClickSupport object) {
+				return createDoubleClickSupportAdapter();
 			}
 			@Override
 			public Adapter caseVisibleSupport(VisibleSupport object) {
@@ -1714,6 +1718,20 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTextInputSupportAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.wireframesketcher.model.DoubleClickSupport <em>Double Click Support</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.wireframesketcher.model.DoubleClickSupport
+	 * @generated
+	 */
+	public Adapter createDoubleClickSupportAdapter() {
 		return null;
 	}
 

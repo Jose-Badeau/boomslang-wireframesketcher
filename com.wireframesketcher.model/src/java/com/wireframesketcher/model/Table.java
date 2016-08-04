@@ -14,17 +14,17 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Table#isVerticalLines <em>Vertical Lines</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Table#isHeader <em>Header</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getTable()
  * @model
  * @generated
  */
-public interface Table extends Widget, SelectionSupport, BorderSupport, VerticalScrollbarSupport, ColorBackgroundSupport, ColorAlphaSupport, ListSupport, FontSupport, TextAlignmentSupport, ColorAlternativeSupport, TextLinksSupport {
+public interface Table extends Widget, SelectionSupport, BorderSupport, VerticalScrollbarSupport, ColorBackgroundSupport, ColorAlphaSupport, ListSupport, FontSupport, TextAlignmentSupport, ColorAlternativeSupport, TextLinksSupport, ClickSupport, DoubleClickSupport, TextInputSupport {
 
 	/**
 	 * Returns the value of the '<em><b>Vertical Lines</b></em>' attribute.

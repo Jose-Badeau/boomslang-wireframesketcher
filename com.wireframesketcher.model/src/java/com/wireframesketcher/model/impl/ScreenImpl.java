@@ -33,6 +33,7 @@ import com.wireframesketcher.model.Widget;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getWidgets <em>Widgets</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getName <em>Name</em>}</li>
@@ -42,7 +43,6 @@ import com.wireframesketcher.model.Widget;
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getTheme <em>Theme</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getMinVersion <em>Min Version</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

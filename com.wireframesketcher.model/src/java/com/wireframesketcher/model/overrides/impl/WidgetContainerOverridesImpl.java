@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.WidgetContainerOverridesImpl#getWidgetChanges <em>Widget Changes</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

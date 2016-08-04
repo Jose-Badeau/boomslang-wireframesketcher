@@ -29,13 +29,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.VSliderImpl#getValue <em>Value</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.VSliderImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.VSliderImpl#getBackground <em>Background</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.VSliderImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -39,6 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.TreeImpl#isBorder <em>Border</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TreeImpl#getValue <em>Value</em>}</li>
@@ -49,7 +50,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.wireframesketcher.model.impl.TreeImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TreeImpl#getFont <em>Font</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -382,6 +382,17 @@ public class TreeImpl extends WidgetImpl implements Tree {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.TREE__FONT, newFont, newFont));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doSelect() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

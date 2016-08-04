@@ -50,7 +50,7 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */
@@ -139,6 +139,7 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = caseColorAlphaSupport(combo);
 				if (result == null) result = caseLinkSupport(combo);
 				if (result == null) result = caseSkinSupport(combo);
+				if (result == null) result = caseSelectionSupport(combo);
 				if (result == null) result = caseNameSupport(combo);
 				if (result == null) result = caseVisibleSupport(combo);
 				if (result == null) result = defaultCase(theEObject);
@@ -376,6 +377,9 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = caseTextAlignmentSupport(table);
 				if (result == null) result = caseColorAlternativeSupport(table);
 				if (result == null) result = caseTextLinksSupport(table);
+				if (result == null) result = caseClickSupport(table);
+				if (result == null) result = caseDoubleClickSupport(table);
+				if (result == null) result = caseTextInputSupport(table);
 				if (result == null) result = caseNameSupport(table);
 				if (result == null) result = caseVisibleSupport(table);
 				if (result == null) result = caseValueSupport(table);
@@ -683,6 +687,19 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ModelPackage.LINK_BAR: {
+				LinkBar linkBar = (LinkBar)theEObject;
+				T result = caseLinkBar(linkBar);
+				if (result == null) result = caseWidget(linkBar);
+				if (result == null) result = caseFontSupport(linkBar);
+				if (result == null) result = caseSelectionSupport(linkBar);
+				if (result == null) result = caseItemSupport(linkBar);
+				if (result == null) result = caseSkinSupport(linkBar);
+				if (result == null) result = caseNameSupport(linkBar);
+				if (result == null) result = caseVisibleSupport(linkBar);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ModelPackage.TOOLTIP: {
 				Tooltip tooltip = (Tooltip)theEObject;
 				T result = caseTooltip(tooltip);
@@ -732,19 +749,6 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = caseSkinSupport(breadcrumbs);
 				if (result == null) result = caseNameSupport(breadcrumbs);
 				if (result == null) result = caseVisibleSupport(breadcrumbs);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ModelPackage.LINK_BAR: {
-				LinkBar linkBar = (LinkBar)theEObject;
-				T result = caseLinkBar(linkBar);
-				if (result == null) result = caseWidget(linkBar);
-				if (result == null) result = caseFontSupport(linkBar);
-				if (result == null) result = caseSelectionSupport(linkBar);
-				if (result == null) result = caseItemSupport(linkBar);
-				if (result == null) result = caseSkinSupport(linkBar);
-				if (result == null) result = caseNameSupport(linkBar);
-				if (result == null) result = caseVisibleSupport(linkBar);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1142,6 +1146,13 @@ public class ModelSwitch<T> extends Switch<T> {
 				TextInputSupport textInputSupport = (TextInputSupport)theEObject;
 				T result = caseTextInputSupport(textInputSupport);
 				if (result == null) result = caseNameSupport(textInputSupport);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelPackage.DOUBLE_CLICK_SUPPORT: {
+				DoubleClickSupport doubleClickSupport = (DoubleClickSupport)theEObject;
+				T result = caseDoubleClickSupport(doubleClickSupport);
+				if (result == null) result = caseNameSupport(doubleClickSupport);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -2488,6 +2499,21 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTextInputSupport(TextInputSupport object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Double Click Support</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Double Click Support</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoubleClickSupport(DoubleClickSupport object) {
 		return null;
 	}
 

@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.URI;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.WidgetOverrides#getX <em>X</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.WidgetOverrides#getY <em>Y</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.emf.common.util.URI;
  *   <li>{@link com.wireframesketcher.model.overrides.WidgetOverrides#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.WidgetOverrides#getItemChanges <em>Item Changes</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getWidgetOverrides()
  * @model

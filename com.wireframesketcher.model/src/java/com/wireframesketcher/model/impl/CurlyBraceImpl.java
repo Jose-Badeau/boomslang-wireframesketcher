@@ -39,6 +39,7 @@ import java.util.Collection;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.CurlyBraceImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.CurlyBraceImpl#getForeground <em>Foreground</em>}</li>
@@ -46,7 +47,6 @@ import java.util.Collection;
  *   <li>{@link com.wireframesketcher.model.impl.CurlyBraceImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.CurlyBraceImpl#getPosition <em>Position</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

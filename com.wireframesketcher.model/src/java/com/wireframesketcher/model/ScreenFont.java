@@ -15,13 +15,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.ScreenFont#getName <em>Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.ScreenFont#getSize <em>Size</em>}</li>
  *   <li>{@link com.wireframesketcher.model.ScreenFont#isBold <em>Bold</em>}</li>
  *   <li>{@link com.wireframesketcher.model.ScreenFont#isItalic <em>Italic</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getScreenFont()
  * @model

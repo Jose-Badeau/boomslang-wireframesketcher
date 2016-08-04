@@ -24,11 +24,11 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ChartImpl#getSkin <em>Skin</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ChartImpl#getChartType <em>Chart Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

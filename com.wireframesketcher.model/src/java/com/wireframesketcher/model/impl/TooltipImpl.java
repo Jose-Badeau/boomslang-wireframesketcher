@@ -40,6 +40,7 @@ import java.util.Collection;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.TooltipImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TooltipImpl#getTextAlignment <em>Text Alignment</em>}</li>
@@ -48,7 +49,6 @@ import java.util.Collection;
  *   <li>{@link com.wireframesketcher.model.impl.TooltipImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TooltipImpl#getPosition <em>Position</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

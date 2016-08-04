@@ -148,6 +148,8 @@ public enum ChartType implements Enumerator {
 	 * Returns the '<em><b>Chart Type</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ChartType get(String literal) {
@@ -164,6 +166,8 @@ public enum ChartType implements Enumerator {
 	 * Returns the '<em><b>Chart Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ChartType getByName(String name) {
@@ -180,6 +184,8 @@ public enum ChartType implements Enumerator {
 	 * Returns the '<em><b>Chart Type</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ChartType get(int value) {

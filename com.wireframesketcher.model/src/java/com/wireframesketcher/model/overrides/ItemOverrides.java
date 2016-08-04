@@ -15,12 +15,12 @@ import org.eclipse.emf.common.util.URI;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.ItemOverrides#getText <em>Text</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.ItemOverrides#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.ItemOverrides#isNoLink <em>No Link</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getItemOverrides()
  * @model

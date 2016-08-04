@@ -16,13 +16,13 @@ import com.wireframesketcher.model.overrides.Overrides;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Master#getScreen <em>Screen</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Master#isDimmed <em>Dimmed</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Master#getOverrides <em>Overrides</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Master#getInstance <em>Instance</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getMaster()
  * @model

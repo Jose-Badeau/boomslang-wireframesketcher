@@ -14,10 +14,10 @@ package com.wireframesketcher.model.overrides;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.Move#getNewIndex <em>New Index</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getMove()
  * @model

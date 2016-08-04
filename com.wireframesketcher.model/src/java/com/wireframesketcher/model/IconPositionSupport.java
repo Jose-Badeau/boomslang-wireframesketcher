@@ -14,10 +14,10 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.IconPositionSupport#getIconPosition <em>Icon Position</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getIconPositionSupport()
  * @model interface="true" abstract="true"

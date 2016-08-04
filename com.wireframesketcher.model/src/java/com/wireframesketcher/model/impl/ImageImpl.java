@@ -27,6 +27,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ImageImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ImageImpl#getRotation <em>Rotation</em>}</li>
@@ -36,7 +37,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.ImageImpl#getSrc <em>Src</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ImageImpl#isGrayscale <em>Grayscale</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

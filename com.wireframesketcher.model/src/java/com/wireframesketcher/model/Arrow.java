@@ -14,12 +14,12 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Arrow#isLeft <em>Left</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Arrow#isRight <em>Right</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Arrow#getDirection <em>Direction</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getArrow()
  * @model

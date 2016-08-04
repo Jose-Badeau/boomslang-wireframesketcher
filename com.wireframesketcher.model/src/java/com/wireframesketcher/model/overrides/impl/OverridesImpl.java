@@ -25,10 +25,10 @@ import com.wireframesketcher.model.overrides.WidgetOverrides;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.OverridesImpl#getWidgets <em>Widgets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

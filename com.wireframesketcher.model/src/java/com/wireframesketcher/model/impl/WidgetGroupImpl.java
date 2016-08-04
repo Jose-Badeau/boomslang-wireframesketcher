@@ -32,11 +32,11 @@ import com.wireframesketcher.model.WidgetGroup;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetGroupImpl#getWidgets <em>Widgets</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetGroupImpl#getLink <em>Link</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

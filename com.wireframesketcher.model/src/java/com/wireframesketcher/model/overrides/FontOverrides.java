@@ -16,13 +16,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.FontOverrides#getSize <em>Size</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.FontOverrides#getBold <em>Bold</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.FontOverrides#getItalic <em>Italic</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.FontOverrides#getUnderline <em>Underline</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.overrides.OverridesPackage#getFontOverrides()
  * @model

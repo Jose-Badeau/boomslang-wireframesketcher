@@ -102,7 +102,7 @@
         defaultValueLiteral="square"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Checkbox" eSuperTypes="#//Widget #//BooleanSelectionSupport #//StateSupport #//LinkSupport #//FontSupport #//SkinSupport"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Combo" eSuperTypes="#//Widget #//StateSupport #//FontSupport #//ColorBorderSupport #//ColorBackgroundSupport #//ColorAlphaSupport #//LinkSupport #//SkinSupport"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Combo" eSuperTypes="#//Widget #//StateSupport #//FontSupport #//ColorBorderSupport #//ColorBackgroundSupport #//ColorAlphaSupport #//LinkSupport #//SkinSupport #//SelectionSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//Widget #//FontSupport #//TextAlignmentSupport #//ColorForegroundSupport #//StateSupport #//IconSupport #//IconPositionSupport #//LinkSupport #//RotationSupport #//TextLinksSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//Widget #//FontSupport #//StateSupport #//LinkSupport #//SkinSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Placeholder" eSuperTypes="#//Widget #//LinkSupport #//SkinSupport"/>
@@ -150,7 +150,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Popup" eSuperTypes="#//Widget #//SelectionSupport #//ItemSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Menu" eSuperTypes="#//Widget #//SelectionSupport #//IconSupport #//ItemSupport #//SkinSupport"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Widget #//SelectionSupport #//BorderSupport #//VerticalScrollbarSupport #//ColorBackgroundSupport #//ColorAlphaSupport #//ListSupport #//FontSupport #//TextAlignmentSupport #//ColorAlternativeSupport #//TextLinksSupport">
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Widget #//SelectionSupport #//BorderSupport #//VerticalScrollbarSupport #//ColorBackgroundSupport #//ColorAlphaSupport #//ListSupport #//FontSupport #//TextAlignmentSupport #//ColorAlternativeSupport #//TextLinksSupport #//ClickSupport #//DoubleClickSupport #//TextInputSupport">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="verticalLines" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
         defaultValueLiteral="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -330,6 +330,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SelectionSupport" abstract="true" interface="true">
+    <eOperations name="doSelect"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="selection" eType="#//SelectionDataType"
         defaultValueLiteral="-1">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -357,6 +358,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProgressBar" eSuperTypes="#//Widget #//ValueSupport #//ColorBackgroundSupport #//SkinSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Callout" eSuperTypes="#//Widget #//FontSupport #//ColorBackgroundSupport #//ColorAlphaSupport #//LinkSupport #//SkinSupport #//AnnotationSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="SearchField" eSuperTypes="#//Widget #//FontSupport #//StateSupport #//ColorBorderSupport #//LinkSupport #//SkinSupport"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkBar" eSuperTypes="#//Widget #//FontSupport #//SelectionSupport #//ItemSupport #//SkinSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Tooltip" eSuperTypes="#//Widget #//FontSupport #//TextAlignmentSupport #//ColorBackgroundSupport #//SkinSupport #//TextLinksSupport">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" lowerBound="1"
         eType="#//Position" defaultValueLiteral="bottomLeft">
@@ -387,7 +389,6 @@
     <eLiterals name="Focused" value="3" literal="focused"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Breadcrumbs" eSuperTypes="#//Widget #//FontSupport #//ItemSupport #//SkinSupport"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LinkBar" eSuperTypes="#//Widget #//FontSupport #//SelectionSupport #//ItemSupport #//SkinSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="Accordion" eSuperTypes="#//Widget #//SelectionSupport #//VerticalScrollbarSupport #//ItemSupport #//FontSupport"/>
   <eClassifiers xsi:type="ecore:EClass" name="VerticalScrollbarSupport" abstract="true"
       interface="true" eSuperTypes="#//ValueSupport">
@@ -658,8 +659,16 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="LayoutParamsDataType" instanceClassName="com.wireframesketcher.model.LayoutParams"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ClickSupport" eSuperTypes="#//NameSupport"/>
-  <eClassifiers xsi:type="ecore:EClass" name="TextInputSupport" eSuperTypes="#//NameSupport"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClickSupport" eSuperTypes="#//NameSupport">
+    <eOperations name="doClick"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextInputSupport" eSuperTypes="#//NameSupport">
+    <eOperations name="doEnter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DoubleClickSupport" abstract="true"
+      interface="true" eSuperTypes="#//NameSupport">
+    <eOperations name="doDoubleClick"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VisibleSupport" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="visible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
         defaultValueLiteral="true">

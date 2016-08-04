@@ -40,6 +40,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.RectangleImpl#getBackground <em>Background</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.RectangleImpl#getAlpha <em>Alpha</em>}</li>
@@ -52,7 +53,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.RectangleImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.RectangleImpl#getTextAlignment <em>Text Alignment</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

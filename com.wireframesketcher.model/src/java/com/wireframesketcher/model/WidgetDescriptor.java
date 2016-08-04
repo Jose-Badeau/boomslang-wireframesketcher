@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.WidgetDescriptor#getTypeName <em>Type Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.WidgetDescriptor#getResizeMode <em>Resize Mode</em>}</li>
@@ -23,7 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.wireframesketcher.model.WidgetDescriptor#getTextLines <em>Text Lines</em>}</li>
  *   <li>{@link com.wireframesketcher.model.WidgetDescriptor#isTextCentered <em>Text Centered</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getWidgetDescriptor()
  * @model

@@ -47,6 +47,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ShapeImpl#getBackground <em>Background</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ShapeImpl#getAlpha <em>Alpha</em>}</li>
@@ -63,7 +64,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.wireframesketcher.model.impl.ShapeImpl#getRotation <em>Rotation</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ShapeImpl#getShapeType <em>Shape Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

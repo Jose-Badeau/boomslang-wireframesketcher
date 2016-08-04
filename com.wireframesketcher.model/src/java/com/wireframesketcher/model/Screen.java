@@ -14,6 +14,7 @@ package com.wireframesketcher.model;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Screen#getHRuler <em>HRuler</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Screen#getVRuler <em>VRuler</em>}</li>
@@ -21,7 +22,6 @@ package com.wireframesketcher.model;
  *   <li>{@link com.wireframesketcher.model.Screen#getTheme <em>Theme</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Screen#getMinVersion <em>Min Version</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getScreen()
  * @model

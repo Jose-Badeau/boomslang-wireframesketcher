@@ -43,6 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ListImpl#getSelection <em>Selection</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ListImpl#isBorder <em>Border</em>}</li>
@@ -57,7 +58,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.wireframesketcher.model.impl.ListImpl#getAlternative <em>Alternative</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ListImpl#isHeader <em>Header</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -567,6 +567,17 @@ public class ListImpl extends WidgetImpl implements List {
 		header = newHeader;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.LIST__HEADER, oldHeader, header));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void doSelect() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.MoveImpl#getRef <em>Ref</em>}</li>
  *   <li>{@link com.wireframesketcher.model.overrides.impl.MoveImpl#getNewIndex <em>New Index</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

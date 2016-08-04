@@ -31,6 +31,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.SVGImageImpl#getLink <em>Link</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SVGImageImpl#getBackground <em>Background</em>}</li>
@@ -41,7 +42,6 @@ import com.wireframesketcher.model.WidgetDescriptor;
  *   <li>{@link com.wireframesketcher.model.impl.SVGImageImpl#isVFlip <em>VFlip</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SVGImageImpl#getSrc <em>Src</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

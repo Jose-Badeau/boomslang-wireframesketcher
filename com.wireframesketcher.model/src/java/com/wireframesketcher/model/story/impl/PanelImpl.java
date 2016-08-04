@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.story.impl.PanelImpl#getId <em>Id</em>}</li>
  *   <li>{@link com.wireframesketcher.model.story.impl.PanelImpl#getScreen <em>Screen</em>}</li>
@@ -33,7 +34,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link com.wireframesketcher.model.story.impl.PanelImpl#getX <em>X</em>}</li>
  *   <li>{@link com.wireframesketcher.model.story.impl.PanelImpl#getY <em>Y</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -16,11 +16,11 @@ import org.eclipse.emf.common.util.URI;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.Image#getSrc <em>Src</em>}</li>
  *   <li>{@link com.wireframesketcher.model.Image#isGrayscale <em>Grayscale</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.wireframesketcher.model.ModelPackage#getImage()
  * @model

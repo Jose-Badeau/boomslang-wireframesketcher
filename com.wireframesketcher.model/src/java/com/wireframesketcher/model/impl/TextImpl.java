@@ -44,6 +44,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.TextImpl#getFont <em>Font</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TextImpl#getTextAlignment <em>Text Alignment</em>}</li>
@@ -53,7 +54,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.wireframesketcher.model.impl.TextImpl#getItems <em>Items</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.TextImpl#isDummyText <em>Dummy Text</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

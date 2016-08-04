@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.SwitchImpl#isSelected <em>Selected</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SwitchImpl#getBackground <em>Background</em>}</li>
@@ -45,7 +46,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.wireframesketcher.model.impl.SwitchImpl#getState <em>State</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.SwitchImpl#getSkin <em>Skin</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
