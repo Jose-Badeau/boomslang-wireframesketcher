@@ -23,23 +23,47 @@ public class BoomslangWFSModelXMLResourceImpl extends ModelXMLResourceImpl {
 					&& name.equals(((NameSupport) root).getName())){
 				return root;
 			}
-			//Second enhancement to handle Widgets in WidgetGroups
-			//TODO Consider WidgetGroups in WidgetGroups
+			//Handle nested WigdetGroups that can contain widgetgroups or widgets 
 			EList<EObject> children = root.eContents();
 			for (int j = 0; j < children.size(); j++) {
 				EObject child = children.get(j);
 				if(child instanceof WidgetGroup){
-					EList<Widget> widgets = ((WidgetGroup)child).getWidgets();
-					for(Widget widget : widgets){
-						if(name.equals(widget.getName())){
-							return widget;
-						}
+					EObject obj = analyzeNestedWidgets(((WidgetGroup)child).getWidgets(), name);
+					if(obj!=null){
+						return obj;
+					}
+				} 
+				if (child instanceof Widget){
+					if(name.equals(((Widget) child).getName())){
+						return child;
 					}
 				}
 			}
 		}
-
 		return super.getEObject(uriFragment);
+	}
+	
+	/**
+	 * Handles widget groups recursively and searches for the widget with the given name
+	 * @param children
+	 * @param name
+	 * @return
+	 */
+	private EObject analyzeNestedWidgets(EList<Widget> children, String name){
+		for(Widget child : children){
+			if (child instanceof WidgetGroup){
+				EObject obj  = analyzeNestedWidgets(((WidgetGroup) child).getWidgets(), name);
+				if(obj!=null){
+					return obj;
+				}
+			}
+			if(child instanceof Widget){
+				if(name.equals(((Widget) child).getName())){
+					return child;
+				}
+			}
+		}
+		return null;
 	}
 
 	public BoomslangWFSModelXMLResourceImpl(URI uri) {
