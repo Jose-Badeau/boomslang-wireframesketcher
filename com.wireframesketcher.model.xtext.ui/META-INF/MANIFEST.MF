@@ -16,7 +16,6 @@ Require-Bundle: com.google.guava,
  org.eclipse.xtext.ui,
  org.eclipse.xtext.ui.shared,
  org.eclipse.xtext.xbase.lib,
- com.wireframesketcher.model.xtext;visibility:=reexport,
- org.xpect.ui;bundle-version="0.1.0"
+ com.wireframesketcher.model.xtext;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 
