@@ -16,16 +16,5 @@
            class="com.wireframesketcher.model.xtext.BoomslangWFSModelResourceFactory"
            type="screen">
      </parser>
-  </extension> 
-    <!-- Xpect testing glue code -->
-   <extension
-         point="org.xpect.fileExtensions">
-      <fileExtension
-            fileExtension="screen"
-            xtextLanguageName="com.wireframesketcher.ui.editors.ScreenEditor"
-            xtextRuntimeModule="com.wireframesketcher.model.xtext.ScreenRuntimeModule"
-            xtextResourceServiceProvider="com.wireframesketcher.model.xtext.ui.ScreenExecutableExtensionFactory:org.eclipse.xtext.resource.generic.GenericResourceServiceProvider"
-            />
-   </extension>
- 
+  </extension>  
 </plugin>
