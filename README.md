@@ -20,3 +20,6 @@ future there might be a composite repository that can hold multiple versions.
 
 ## Installation
 boomslang-wireframesketcher can be installed using the update-site at: https://dl.bintray.com/jose-badeau/boomslang-wireframesketcher/
+
+## Further Reading
+For further information see the projects wiki: https://github.com/Jose-Badeau/boomslang-wireframesketcher/wiki/Wireframesketcher-Basics
