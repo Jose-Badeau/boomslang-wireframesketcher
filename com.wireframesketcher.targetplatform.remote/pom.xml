@@ -6,7 +6,7 @@
     <relativePath>../pom.xml</relativePath>
     <groupId>com.wireframesketcher</groupId>
     <artifactId>com.wireframesketcher</artifactId>
-    <version>4.6.4-SNAPSHOT</version>
+    <version>4.6.4</version>
   </parent>
 
   <!-- Refers to the <artifactId>.target file that must exist next to this pom file. -->
