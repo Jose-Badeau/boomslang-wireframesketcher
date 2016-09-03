@@ -10,10 +10,6 @@
 	<packaging>pom</packaging>
 
 	<properties>
-        <!-- use build.mode to switch between internet and enterprise build setup:
-             remote:  with internet access
-             inhouse: enterprise setup     -->
-        <build.mode>remote</build.mode>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.6</java.version>
@@ -22,23 +18,19 @@
 		<xtext.version>2.10.0</xtext.version>
 		<geb.version>0.9.2</geb.version>
 		<selenium.version>2.39.0</selenium.version>
-
 		<!-- properties used by PCY_VersionPlugin during release procedure -->
 		<p.swid>A00</p.swid>
 		<p.domain>Testing</p.domain>
 	</properties>
 
 	<modules>
-		<module>com.wireframesketcher.targetplatform.${build.mode}</module>
+		<module>com.wireframesketcher.targetplatform.remote</module>
 		<module>com.wireframesketcher.model</module>
 		<module>com.wireframesketcher.model.tests</module>
 		<module>com.wireframesketcher.model.xtext</module>
 		<module>com.wireframesketcher.model.xtext.ui</module>
 		<module>com.wireframesketcher.model.patch</module>
-<!-- 
-		Build the repo separately due to Tycho bug (id 389698) that cannot deal with feature patches.
-		<module>com.wireframesketcher.model.repository.${build.mode}</module>
--->
+		<module>com.wireframesketcher.model.repository.remote</module>
 	</modules>
 
 	<build>
