@@ -30,7 +30,11 @@
 		<module>com.wireframesketcher.model.xtext</module>
 		<module>com.wireframesketcher.model.xtext.ui</module>
 		<module>com.wireframesketcher.model.patch</module>
+		<!-- 
+		Build the repo separately due to Tycho bug (id 389698) that cannot deal with feature patches.
+		<module>com.wireframesketcher.model.repository.${build.mode}</module>
 		<module>com.wireframesketcher.model.repository.remote</module>
+		-->
 	</modules>
 
 	<build>
