@@ -12,6 +12,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- use build.mode to switch between internet and enterprise build setup:
+             remote:     with internet access (default)
+             enterprise: enterprise setup (set/overridden with maven profile properties in user settings) -->
+        <build.mode>remote</build.mode>
+        <!-- override with maven profile properties in user settings for enterprise platform -->
+        <target.platform.relativepath></target.platform.relativepath>
 		<java.version>1.6</java.version>
 		<tycho.version>0.23.1</tycho.version>
 		<junit.version>4.11</junit.version>
@@ -24,7 +30,7 @@
 	</properties>
 
 	<modules>
-		<module>com.wireframesketcher.targetplatform.remote</module>
+		<module>${target.platform.relativepath}com.wireframesketcher.targetplatform.${build.mode}</module>
 		<module>com.wireframesketcher.model</module>
 		<module>com.wireframesketcher.model.tests</module>
 		<module>com.wireframesketcher.model.xtext</module>
