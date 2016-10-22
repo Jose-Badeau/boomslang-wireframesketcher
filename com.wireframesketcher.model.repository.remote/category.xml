@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <site>
-   <feature id="com.wireframesketcher.model.patch" patch="true" url="features/com.wireframesketcher.model.patch_4.6.4.qualifier.jar" version="4.6.4.qualifier">
+   <feature id="com.wireframesketcher.model.patch" patch="true" url="features/com.wireframesketcher.model.patch_4.7.0.qualifier.jar" version="4.7.0.qualifier">
       <category name="com.wireframesketcher"/>
    </feature>
-   <bundle id="com.wireframesketcher.model.xtext" version="4.6.4.qualifier">
+   <bundle id="com.wireframesketcher.model.xtext" version="4.7.0.qualifier">
       <category name="com.wireframesketcher"/>
    </bundle>
-   <bundle id="com.wireframesketcher.model.xtext.ui" version="4.6.4.qualifier">
+   <bundle id="com.wireframesketcher.model.xtext.ui" version="4.7.0.qualifier">
       <category name="com.wireframesketcher"/>
    </bundle>
    
    <!-- external dependency 'original wireframesketcher' -->
-   <feature id="com.wireframesketcher" url="features/com.wireframesketcher_4.6.4.qualifier.jar" version="4.6.4.qualifier">
+   <feature id="com.wireframesketcher" url="features/com.wireframesketcher_4.7.0.qualifier.jar" version="4.7.0.qualifier">
       <category name="com.wireframesketcher"/>
    </feature>
    <category-def label="Wireframesketcher Model" name="com.wireframesketcher"/>
