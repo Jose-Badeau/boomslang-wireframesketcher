@@ -85,6 +85,7 @@ import com.wireframesketcher.model.ModelFactory;
 import com.wireframesketcher.model.ModelPackage;
 import com.wireframesketcher.model.NameSupport;
 import com.wireframesketcher.model.Note;
+import com.wireframesketcher.model.NoteSupport;
 import com.wireframesketcher.model.Panel;
 import com.wireframesketcher.model.Placeholder;
 import com.wireframesketcher.model.Popup;
@@ -787,6 +788,13 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * @generated
 	 */
 	private EClass textLinksSupportEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass noteSupportEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1815,6 +1823,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getScreenFont_Available() {
+		return (EAttribute)screenFontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFontSupport() {
 		return fontSupportEClass;
 	}
@@ -2769,6 +2786,24 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getNoteSupport() {
+		return noteSupportEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNoteSupport_Note() {
+		return (EAttribute)noteSupportEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSpinner() {
 		return spinnerEClass;
 	}
@@ -3192,6 +3227,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(screenFontEClass, SCREEN_FONT__SIZE);
 		createEAttribute(screenFontEClass, SCREEN_FONT__BOLD);
 		createEAttribute(screenFontEClass, SCREEN_FONT__ITALIC);
+		createEAttribute(screenFontEClass, SCREEN_FONT__AVAILABLE);
 
 		fontSupportEClass = createEClass(FONT_SUPPORT);
 		createEReference(fontSupportEClass, FONT_SUPPORT__FONT);
@@ -3362,6 +3398,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		textLinksSupportEClass = createEClass(TEXT_LINKS_SUPPORT);
 
+		noteSupportEClass = createEClass(NOTE_SUPPORT);
+		createEAttribute(noteSupportEClass, NOTE_SUPPORT__NOTE);
+
 		// Create enums
 		resizeModeEEnum = createEEnum(RESIZE_MODE);
 		textAlignmentEEnum = createEEnum(TEXT_ALIGNMENT);
@@ -3424,7 +3463,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		// Add supertypes to classes
 		screenEClass.getESuperTypes().add(this.getWidgetContainer());
+		screenEClass.getESuperTypes().add(this.getNoteSupport());
 		screenEClass.getESuperTypes().add(this.getNameSupport());
+		widgetEClass.getESuperTypes().add(this.getNoteSupport());
 		widgetEClass.getESuperTypes().add(this.getNameSupport());
 		widgetEClass.getESuperTypes().add(this.getVisibleSupport());
 		buttonEClass.getESuperTypes().add(this.getWidget());
@@ -3924,6 +3965,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getScreenFont_Size(), this.getFontSizeDataType(), "size", null, 1, 1, ScreenFont.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScreenFont_Bold(), ecorePackage.getEBoolean(), "bold", null, 1, 1, ScreenFont.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScreenFont_Italic(), ecorePackage.getEBoolean(), "italic", null, 1, 1, ScreenFont.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScreenFont_Available(), ecorePackage.getEBooleanObject(), "available", null, 0, 1, ScreenFont.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(fontSupportEClass, FontSupport.class, "FontSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFontSupport_Font(), this.getFont(), null, "font", null, 1, 1, FontSupport.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4107,6 +4149,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		initEClass(textLinksSupportEClass, TextLinksSupport.class, "TextLinksSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		initEClass(noteSupportEClass, NoteSupport.class, "NoteSupport", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNoteSupport_Note(), ecorePackage.getEString(), "note", "", 0, 1, NoteSupport.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(resizeModeEEnum, ResizeMode.class, "ResizeMode");
 		addEEnumLiteral(resizeModeEEnum, ResizeMode.BOTH_LITERAL);
@@ -4200,6 +4245,26 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
+		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+		addAnnotation
+		  (getNoteSupport_Note(), 
+		   source, 
+		   new String[] {
+			 "kind", "element"
+		   });
 	}
 
 } //ModelPackageImpl
