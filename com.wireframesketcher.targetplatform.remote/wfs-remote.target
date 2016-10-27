@@ -14,7 +14,7 @@
 <repository location="http://www.xpect-tests.org/updatesite/nightly/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="com.wireframesketcher.feature.group" version="4.6.4"/>
+<unit id="com.wireframesketcher.feature.group" version="4.7.0"/>
 <repository location="http://wireframesketcher.com/updates/"/>
 </location>
 </locations>
