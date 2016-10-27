@@ -35,7 +35,7 @@ package com.wireframesketcher.model;
  * @model abstract="true"
  * @generated
  */
-public interface Widget extends NameSupport, VisibleSupport {
+public interface Widget extends NoteSupport, NameSupport, VisibleSupport {
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

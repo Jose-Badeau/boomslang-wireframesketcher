@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import com.wireframesketcher.model.ModelPackage;
+import com.wireframesketcher.model.NameSupport;
 import com.wireframesketcher.model.ResizeMode;
 import com.wireframesketcher.model.VisibleSupport;
 import com.wireframesketcher.model.Widget;
@@ -30,6 +31,7 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#getNote <em>Note</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#getName <em>Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#isVisible <em>Visible</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.WidgetImpl#getId <em>Id</em>}</li>
@@ -52,6 +54,26 @@ import com.wireframesketcher.model.WidgetDescriptor;
  * @generated
  */
 public abstract class WidgetImpl extends EObjectImpl implements Widget {
+	/**
+	 * The default value of the '{@link #getNote() <em>Note</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNote()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NOTE_EDEFAULT = "";
+
+	/**
+	 * The cached value of the '{@link #getNote() <em>Note</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNote()
+	 * @generated
+	 * @ordered
+	 */
+	protected String note = NOTE_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -371,6 +393,27 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	@Override
 	protected EClass eStaticClass() {
 		return ModelPackage.Literals.WIDGET;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getNote() {
+		return note;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNote(String newNote) {
+		String oldNote = note;
+		note = newNote;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.WIDGET__NOTE, oldNote, note));
 	}
 
 	/**
@@ -785,6 +828,8 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case ModelPackage.WIDGET__NOTE:
+				return getNote();
 			case ModelPackage.WIDGET__NAME:
 				return getName();
 			case ModelPackage.WIDGET__VISIBLE:
@@ -830,6 +875,9 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case ModelPackage.WIDGET__NOTE:
+				setNote((String)newValue);
+				return;
 			case ModelPackage.WIDGET__NAME:
 				setName((String)newValue);
 				return;
@@ -889,6 +937,9 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case ModelPackage.WIDGET__NOTE:
+				setNote(NOTE_EDEFAULT);
+				return;
 			case ModelPackage.WIDGET__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -948,6 +999,8 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case ModelPackage.WIDGET__NOTE:
+				return NOTE_EDEFAULT == null ? note != null : !NOTE_EDEFAULT.equals(note);
 			case ModelPackage.WIDGET__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModelPackage.WIDGET__VISIBLE:
@@ -993,6 +1046,12 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == NameSupport.class) {
+			switch (derivedFeatureID) {
+				case ModelPackage.WIDGET__NAME: return ModelPackage.NAME_SUPPORT__NAME;
+				default: return -1;
+			}
+		}
 		if (baseClass == VisibleSupport.class) {
 			switch (derivedFeatureID) {
 				case ModelPackage.WIDGET__VISIBLE: return ModelPackage.VISIBLE_SUPPORT__VISIBLE;
@@ -1009,6 +1068,12 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == NameSupport.class) {
+			switch (baseFeatureID) {
+				case ModelPackage.NAME_SUPPORT__NAME: return ModelPackage.WIDGET__NAME;
+				default: return -1;
+			}
+		}
 		if (baseClass == VisibleSupport.class) {
 			switch (baseFeatureID) {
 				case ModelPackage.VISIBLE_SUPPORT__VISIBLE: return ModelPackage.WIDGET__VISIBLE;
@@ -1027,7 +1092,9 @@ public abstract class WidgetImpl extends EObjectImpl implements Widget {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
+		result.append(" (note: ");
+		result.append(note);
+		result.append(", name: ");
 		result.append(name);
 		result.append(", visible: ");
 		result.append(visible);

@@ -27,7 +27,7 @@ package com.wireframesketcher.model;
  * @model
  * @generated
  */
-public interface Screen extends WidgetContainer, NameSupport {
+public interface Screen extends WidgetContainer, NoteSupport, NameSupport {
 	/**
 	 * Returns the value of the '<em><b>HRuler</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

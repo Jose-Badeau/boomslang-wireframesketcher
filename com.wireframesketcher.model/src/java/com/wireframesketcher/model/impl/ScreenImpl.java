@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import com.wireframesketcher.model.ModelPackage;
 import com.wireframesketcher.model.NameSupport;
+import com.wireframesketcher.model.NoteSupport;
 import com.wireframesketcher.model.Screen;
 import com.wireframesketcher.model.ScreenFont;
 import com.wireframesketcher.model.ScreenRuler;
@@ -36,6 +37,7 @@ import com.wireframesketcher.model.Widget;
  * </p>
  * <ul>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getWidgets <em>Widgets</em>}</li>
+ *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getNote <em>Note</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getName <em>Name</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getHRuler <em>HRuler</em>}</li>
  *   <li>{@link com.wireframesketcher.model.impl.ScreenImpl#getVRuler <em>VRuler</em>}</li>
@@ -56,6 +58,26 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 	 * @ordered
 	 */
 	protected EList<Widget> widgets;
+
+	/**
+	 * The default value of the '{@link #getNote() <em>Note</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNote()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NOTE_EDEFAULT = "";
+
+	/**
+	 * The cached value of the '{@link #getNote() <em>Note</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNote()
+	 * @generated
+	 * @ordered
+	 */
+	protected String note = NOTE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -390,6 +412,27 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getNote() {
+		return note;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNote(String newNote) {
+		String oldNote = note;
+		note = newNote;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.SCREEN__NOTE, oldNote, note));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -415,6 +458,8 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 		switch (featureID) {
 			case ModelPackage.SCREEN__WIDGETS:
 				return getWidgets();
+			case ModelPackage.SCREEN__NOTE:
+				return getNote();
 			case ModelPackage.SCREEN__NAME:
 				return getName();
 			case ModelPackage.SCREEN__HRULER:
@@ -443,6 +488,9 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 			case ModelPackage.SCREEN__WIDGETS:
 				getWidgets().clear();
 				getWidgets().addAll((Collection<? extends Widget>)newValue);
+				return;
+			case ModelPackage.SCREEN__NOTE:
+				setNote((String)newValue);
 				return;
 			case ModelPackage.SCREEN__NAME:
 				setName((String)newValue);
@@ -477,6 +525,9 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 			case ModelPackage.SCREEN__WIDGETS:
 				getWidgets().clear();
 				return;
+			case ModelPackage.SCREEN__NOTE:
+				setNote(NOTE_EDEFAULT);
+				return;
 			case ModelPackage.SCREEN__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -509,6 +560,8 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 		switch (featureID) {
 			case ModelPackage.SCREEN__WIDGETS:
 				return widgets != null && !widgets.isEmpty();
+			case ModelPackage.SCREEN__NOTE:
+				return NOTE_EDEFAULT == null ? note != null : !NOTE_EDEFAULT.equals(note);
 			case ModelPackage.SCREEN__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModelPackage.SCREEN__HRULER:
@@ -532,6 +585,12 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == NoteSupport.class) {
+			switch (derivedFeatureID) {
+				case ModelPackage.SCREEN__NOTE: return ModelPackage.NOTE_SUPPORT__NOTE;
+				default: return -1;
+			}
+		}
 		if (baseClass == NameSupport.class) {
 			switch (derivedFeatureID) {
 				case ModelPackage.SCREEN__NAME: return ModelPackage.NAME_SUPPORT__NAME;
@@ -548,6 +607,12 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == NoteSupport.class) {
+			switch (baseFeatureID) {
+				case ModelPackage.NOTE_SUPPORT__NOTE: return ModelPackage.SCREEN__NOTE;
+				default: return -1;
+			}
+		}
 		if (baseClass == NameSupport.class) {
 			switch (baseFeatureID) {
 				case ModelPackage.NAME_SUPPORT__NAME: return ModelPackage.SCREEN__NAME;
@@ -567,7 +632,9 @@ public class ScreenImpl extends EObjectImpl implements Screen {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
+		result.append(" (note: ");
+		result.append(note);
+		result.append(", name: ");
 		result.append(name);
 		result.append(", theme: ");
 		result.append(theme);

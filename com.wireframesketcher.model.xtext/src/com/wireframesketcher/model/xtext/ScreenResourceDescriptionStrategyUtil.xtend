@@ -16,7 +16,6 @@ class ScreenResourceDescriptionStrategyUtil {
 	def isComponent(EObject candidate) {
 		switch (candidate) {
 			Screen: {
-				println(candidate.widgets.get(0))
 				val widgets = candidate.widgets;
 				(!widgets.nullOrEmpty && 
 					(widgets.containsTabbedPane || 
