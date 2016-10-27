@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.wireframesketcher</groupId>
-        <artifactId>com.wireframesketcher</artifactId>
+        <groupId>org.boomslang</groupId>
+        <artifactId>org.boomslang.wireframesketcher</artifactId>
         <version>4.7.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-	<artifactId>com.wireframesketcher.model.patch</artifactId>
+	<artifactId>org.boomslang.wireframesketcher.model.patch</artifactId>
 	<packaging>eclipse-feature</packaging>
 	<name>Wireframesketcher Model Feature Patch</name>
 	<description>Extension of the model of wireframesketcher, e.g. to support attributes like clickable.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<feature id="com.wireframesketcher.model.patch" label="Model Patch" version="4.7.0.qualifier">
+<feature id="org.boomslang.wireframesketcher.model.patch" label="Model Patch" version="4.7.0.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -23,9 +23,9 @@
 
    <plugin download-size="0" id="com.wireframesketcher.model" install-size="0" unpack="false" version="0.0.0"/>
 
-   <plugin download-size="0" id="com.wireframesketcher.model.xtext" install-size="0" unpack="false" version="0.0.0"/>
+   <plugin download-size="0" id="org.boomslang.wireframesketcher.model.xtext" install-size="0" unpack="false" version="0.0.0"/>
 
-   <plugin download-size="0" id="com.wireframesketcher.model.xtext.ui" install-size="0" unpack="false" version="0.0.0"/>
+   <plugin download-size="0" id="org.boomslang.wireframesketcher.model.xtext.ui" install-size="0" unpack="false" version="0.0.0"/>
 
    <plugin download-size="0" id="com.wireframesketcher.spy" install-size="0" unpack="false" version="0.0.0"/>
 

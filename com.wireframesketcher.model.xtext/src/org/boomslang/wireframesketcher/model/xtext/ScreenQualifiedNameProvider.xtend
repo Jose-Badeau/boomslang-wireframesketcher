@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.xtext
+package org.boomslang.wireframesketcher.model.xtext
 
 import org.eclipse.xtext.naming.DefaultDeclarativeQualifiedNameProvider
 import org.eclipse.xtext.naming.QualifiedName

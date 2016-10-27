@@ -4,16 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.wireframesketcher</groupId>
-		<artifactId>com.wireframesketcher</artifactId>
+		<groupId>org.boomslang</groupId>
+		<artifactId>org.boomslang.wireframesketcher</artifactId>
 		<!-- You should change this and the MANIFEST.MF to your versioning scheme -->
 		<version>4.7.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>com.wireframesketcher.model.tests</artifactId>
+	<artifactId>org.boomslang.wireframesketcher.model.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
-	<name>Wireframe Sketcher Model Tests</name>
+	<name>Boomslang Wireframe Sketcher Model Tests</name>
 
 	<build>
 

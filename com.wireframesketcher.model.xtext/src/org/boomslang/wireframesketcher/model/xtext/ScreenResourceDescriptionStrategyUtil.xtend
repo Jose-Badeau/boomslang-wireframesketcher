@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.xtext
+package org.boomslang.wireframesketcher.model.xtext
 
 import com.wireframesketcher.model.Master
 import com.wireframesketcher.model.Screen

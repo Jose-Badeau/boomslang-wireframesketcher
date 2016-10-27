@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.xtext
+package org.boomslang.wireframesketcher.model.xtext
 
 import org.eclipse.xtext.naming.IQualifiedNameProvider
 import org.eclipse.xtext.resource.IDefaultResourceDescriptionStrategy

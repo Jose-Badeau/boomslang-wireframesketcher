@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.wireframesketcher</groupId>
-		<artifactId>com.wireframesketcher</artifactId>
+		<groupId>org.boomslang</groupId>
+		<artifactId>org.boomslang.wireframesketcher</artifactId>
 		<!-- You should change this and the MANIFEST.MF to your versioning scheme -->
 		<version>4.7.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
@@ -13,7 +13,7 @@
 
 	<artifactId>com.wireframesketcher.model</artifactId>
 	<packaging>eclipse-plugin</packaging>
-	<name>Wireframe Sketcher Model</name>
+	<name>Boomslang Wireframe Sketcher Model</name>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
