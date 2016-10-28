@@ -5,7 +5,7 @@
     <extension
           point="org.eclipse.xtext.extension_resourceServiceProvider">
         <resourceServiceProvider
-              class="com.wireframesketcher.model.xtext.ui.ScreenExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider"
+              class="org.boomslang.wireframesketcher.model.xtext.ui.ScreenExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider"
               uriExtension="screen">
         </resourceServiceProvider>
     </extension>
@@ -13,7 +13,7 @@
      <extension
         point="org.eclipse.emf.ecore.extension_parser">
      <parser
-           class="com.wireframesketcher.model.xtext.BoomslangWFSModelResourceFactory"
+           class="org.boomslang.wireframesketcher.model.xtext.BoomslangWFSModelResourceFactory"
            type="screen">
      </parser>
   </extension>  
