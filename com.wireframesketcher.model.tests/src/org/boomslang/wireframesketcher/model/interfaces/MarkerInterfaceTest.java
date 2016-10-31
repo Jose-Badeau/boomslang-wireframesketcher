@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.interfaces;
+package org.boomslang.wireframesketcher.model.interfaces;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.assertThat;

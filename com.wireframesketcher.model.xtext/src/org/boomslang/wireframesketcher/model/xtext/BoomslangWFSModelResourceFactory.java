@@ -1,6 +1,8 @@
-package com.wireframesketcher.model.xtext;
+package org.boomslang.wireframesketcher.model.xtext;
 
 import com.wireframesketcher.model.impl.ModelXMLResourceFactoryImpl;
+import com.wireframesketcher.model.xtext.BoomslangWFSModelXMLResourceImpl;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.xtext.resource.IResourceFactory;
 import org.eclipse.emf.ecore.resource.Resource;

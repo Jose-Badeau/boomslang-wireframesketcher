@@ -1,4 +1,6 @@
-package com.wireframesketcher.model;
+package org.boomslang.wireframesketcher.model;
+
+import com.wireframesketcher.model.ColorDesc;
 
 import junit.framework.TestCase;
 

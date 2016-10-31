@@ -39,7 +39,7 @@
    </extension>
   <extension
         point="org.eclipse.emf.ecore.extension_parser">
-   <!--  screen Parser moved to com.wireframesketcher.model.xtext.ui to use BoomslangWFSModelResourceFactory
+   <!--  screen Parser moved to org.boomslang.wireframesketcher.model.xtext.ui to use BoomslangWFSModelResourceFactory
    <parser
            class="com.wireframesketcher.model.impl.ModelXMLResourceFactoryImpl"
            type="screen">

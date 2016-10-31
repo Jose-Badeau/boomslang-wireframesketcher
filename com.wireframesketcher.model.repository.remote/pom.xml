@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.wireframesketcher</groupId>
-        <artifactId>com.wireframesketcher</artifactId>
+        <groupId>org.boomslang</groupId>
+        <artifactId>org.boomslang.wireframesketcher</artifactId>
         <version>4.7.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-	<artifactId>com.wireframesketcher.model.repository.remote</artifactId>
+	<artifactId>org.boomslang.wireframesketcher.model.repository.remote</artifactId>
 	<packaging>eclipse-repository</packaging>
-	<name>Wireframesketcher Model Remote Repository</name>
+	<name>Boomslang Wireframesketcher Model Remote Repository</name>
 
 </project>

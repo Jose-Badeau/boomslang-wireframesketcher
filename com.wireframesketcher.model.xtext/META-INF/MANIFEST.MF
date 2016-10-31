@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: com.wireframesketcher.model.xtext
+Bundle-SymbolicName: org.boomslang.wireframesketcher.model.xtext
 Bundle-Version: 4.7.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
@@ -15,5 +15,5 @@ Require-Bundle: com.wireframesketcher.model;visibility:=reexport,
  org.eclipse.xtext,
  org.eclipse.xtext.xbase.lib
 Bundle-ActivationPolicy: lazy
-Export-Package: com.wireframesketcher.model.xtext
+Export-Package: org.boomslang.wireframesketcher.model.xtext
 

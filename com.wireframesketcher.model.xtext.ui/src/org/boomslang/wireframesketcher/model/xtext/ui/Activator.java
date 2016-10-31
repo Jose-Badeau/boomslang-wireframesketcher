@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.xtext.ui;
+package org.boomslang.wireframesketcher.model.xtext.ui;
 
 import org.apache.log4j.Logger;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -8,7 +8,8 @@ import org.osgi.framework.BundleContext;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.util.Modules;
-import com.wireframesketcher.model.xtext.ScreenRuntimeModule;
+import org.boomslang.wireframesketcher.model.xtext.ScreenRuntimeModule;
+import org.boomslang.wireframesketcher.model.xtext.ui.ScreenUiModule;
 
 /**
  * The activator class controls the plug-in life cycle
@@ -37,7 +38,7 @@ import com.wireframesketcher.model.xtext.ScreenRuntimeModule;
 public class Activator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "com.wireframesketcher.model.xtext.ui"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "org.boomslang.wireframesketcher.model.xtext.ui"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

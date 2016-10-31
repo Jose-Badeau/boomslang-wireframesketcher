@@ -3,10 +3,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.wireframesketcher</groupId>
-	<artifactId>com.wireframesketcher</artifactId>
+	<groupId>org.boomslang</groupId>
+	<artifactId>org.boomslang.wireframesketcher</artifactId>
 	<version>4.7.0-SNAPSHOT</version>
-	<name>Wireframe Sketcher</name>
+	<name>Boomslang Wireframe Sketcher</name>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -32,8 +32,8 @@
 		<module>com.wireframesketcher.model.patch</module>
 		<!-- 
 		Build the repo separately due to Tycho bug (id 389698) that cannot deal with feature patches.
-		<module>com.wireframesketcher.model.repository.${build.mode}</module>
-		<module>com.wireframesketcher.model.repository.remote</module>
+		<module>org.boomslang.wireframesketcher.model.repository.${build.mode}</module>
+		<module>org.boomslang.wireframesketcher.model.repository.remote</module>
 		-->
 	</modules>
 

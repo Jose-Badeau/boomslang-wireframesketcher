@@ -1,4 +1,4 @@
-package com.wireframesketcher.model.xtext
+package org.boomslang.wireframesketcher.model.xtext
 
 import com.google.inject.Inject
 // import org.apache.log4j.Logger
