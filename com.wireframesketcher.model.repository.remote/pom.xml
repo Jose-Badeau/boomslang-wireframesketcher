@@ -13,4 +13,5 @@
 	<packaging>eclipse-repository</packaging>
 	<name>Boomslang Wireframesketcher Model Remote Repository</name>
 
+<version>4.7.1-SNAPSHOT</version>
 </project>

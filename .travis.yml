@@ -8,7 +8,7 @@ script:
 after_success: 
    - java -jar DirectoryCleaner.jar $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates
    - bash -e ./deleteExistingP2Content.sh
-   - bash -e ./build.sh $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates 4.7.0 com.wireframesketcher.model.repository.remote/target/repository
+   - bash -e ./build.sh $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates 4.7.1 com.wireframesketcher.model.repository.remote/target/repository
 env:
   global:
   - secure: elYnlfEBOxJZxIR7U4TRbl5KtflMVvVXxPUUMthgTtwQmCLTA78MYruKh/q/2nV2H139OEnYVyacCYcZrjXvSYIS62hQOirHsvSv9gd5Nmc8r/8SVBDuSvCH49Fd/iqs5GRNY7X6tc2FnGjOYUtsfbTfGvnFDWaZGfavcg8uxY2p8FtazW6WUrqWJMBrOtzoby8NUx9rb6wAm0MVZzoUm8LSVBpUupNQo5CEfBvPQy8f3AdZM2xeqEjkzH/a3r/UD1wS9XJRH2SIB1uDn0de8gL4HI6EPScsS2isF8ThungDSRXEZZpKGby0yXFndfXC1V/IcATqcCBewOCH2fzrA/oM/BwcGZf4IuiYO378viWmn1csW4+b6Y5iaAET0qC2C7DJsL1PxtnbU47l8D+g+XHc2SsCy5uR32H+1AausHyZOLBELwPhYAV+Z2VR/6+7oqpbhbaGPnIBFtqYfDnFCGFaJ0yBRoPR7/d5xdpbKkE3TvF5o0Ldy6D+KElu/dVCLi4oKvwBxFcMOMvaivwAhDiVfD67wgFvvAoXukRmg0cY2VLjhqgSbUw5WNhe9E4FePFelTxl1A5SQ0gVMi5aUcapj9H2LNfsnK6B5/rnYsl3QYEbs6wh9YuzQ7X2yE5U1rj4+xy5k1UkxBxOS9iGkVt0Hm3GAOOVnAM0vfuyxx4=
