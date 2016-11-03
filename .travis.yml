@@ -1,9 +1,9 @@
 language: java
 sudo: true
 script:
-- mvn clean deploy
+- mvn clean install
 - cd com.wireframesketcher.model.repository.remote
-- mvn deploy
+- mvn install
 - cd ..
 after_success: 
    - java -jar DirectoryCleaner.jar $BT_USER $BT_APIKEY jose-badeau boomslang-wireframesketcher updates
