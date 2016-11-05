@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.boomslang.wireframesketcher.model.patch_4.7.0.qualifier.jar" id="org.boomslang.wireframesketcher.model.patch" version="4.7.0.qualifier" patch="true">
+   <feature url="features/org.boomslang.wireframesketcher.model.patch_4.7.0.jar" id="org.boomslang.wireframesketcher.model.patch" version="4.7.0" patch="true">
       <category name="org.boomslang.wireframesketcher"/>
    </feature>
-   <feature url="features/com.wireframesketcher_4.7.0.qualifier.jar" id="com.wireframesketcher" version="4.7.0.qualifier">
+   <feature url="features/com.wireframesketcher_4.7.0.jar" id="com.wireframesketcher" version="4.7.0">
       <category name="org.boomslang.wireframesketcher"/>
    </feature>
-   <bundle id="org.boomslang.wireframesketcher.model.xtext" version="4.7.0.qualifier">
+   <bundle id="org.boomslang.wireframesketcher.model.xtext" version="4.7.0">
       <category name="org.boomslang.wireframesketcher"/>
    </bundle>
-   <bundle id="org.boomslang.wireframesketcher.model.xtext.ui" version="4.7.0.qualifier">
+   <bundle id="org.boomslang.wireframesketcher.model.xtext.ui" version="4.7.0">
       <category name="org.boomslang.wireframesketcher"/>
    </bundle>
    <category-def name="org.boomslang.wireframesketcher" label="Boomslang Wireframesketcher Model"/>
