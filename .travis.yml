@@ -1,5 +1,14 @@
 language: java
 sudo: true
+jdk:
+  - oraclejdk8
+cache:
+  directories:
+    - $HOME/.m2
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
 script:
 - mvn clean install
 - cd com.wireframesketcher.model.repository.remote
